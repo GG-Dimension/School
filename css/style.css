@@ -1,0 +1,149 @@
+
+:root {
+    --mainBlue: #304893;
+    --mainYellow: rgb(249, 228, 148);
+    --mainWhite: #fff;
+    --mainBlack: rgb(51, 100, 173);
+    --yellowTrans: rgba(122, 123, 137, 0.5);
+    --mainGrey: rgb(238, 238, 238);
+  }
+
+
+  .top{
+    background-color: #2d6c9b;
+  }
+.header{
+    position: fixed;
+ padding: 0;
+    transition: 0.6s;
+    z-index: 99999;
+}
+
+/* .mainbtn{
+padding: 10px!important;
+} */
+
+.nav-link {
+  
+    color: #2d6c9b;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-link:hover {
+    /* color: black; */
+    color:rgb(231, 119, 44);
+    cursor: pointer;
+  }
+
+  .max-height {
+    min-height: calc(100vh - 276px);
+    background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+      url("../img/school1.jpg") center/cover fixed no-repeat;
+    position: relative;
+  }
+
+
+  .about-img__container {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .about-img__container::before {
+    content: "";
+    position: absolute;
+    top: -1.5rem;
+    left: 1.7rem;
+    width: 100%;
+    height: 100%;
+    outline: 0.3rem solid rgb(231, 119, 44);
+    z-index: -1;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+  }
+  .about-img__container:hover:before {
+    top: 0;
+    left: 0;
+  }
+
+  .banner-title {
+    color: var(--mainBlue);
+    font-size: 4rem;
+  }
+  .banner-text {
+    color: #f1f2f5!important;
+    font-size: 4rem;
+    font-style: italic;
+  }
+
+  .info-icon:hover{
+    color: #476ee4;
+    cursor: pointer;
+  }
+
+.footerWrapper{
+  background-color: #2d6c9b!important ;
+  
+}
+  .footerLinks:hover{
+    /* color: #b8bbc4!important; */
+    color: rgb(231, 119, 44)!important;
+    cursor: pointer;
+  }
+
+
+  /* Style the header */
+#mybot {
+    z-index: 9999;
+    transition: all 1s ease-in-out;
+    padding: 0;
+    margin: 0; 
+  }
+  
+  
+
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(218, 230, 244)!important;
+    transition: all 1s ease-in-out;
+  }
+
+
+
+  /* img zoom in on hover */
+  .myimage{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+figure{
+    overflow: hidden;
+    margin: 0 0px;
+}
+
+
+
+.myimage .myimg {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.myimage #zoom .myimg {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.myimage #zoom:hover .myimg {
+    transform: scale(1.2);
+    filter: grayscale(40%);
+}
+  
+
